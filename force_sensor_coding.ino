@@ -10,13 +10,13 @@ void setup()
   Serial.begin(9600);
   pinMode(forcePin,INPUT);
   analogWrite(6,contrast);
-  Serial.println("Health Monitoring Of Spine");
+  Serial.println("Force sensor values");
   lcd.begin(16,2);
   lcd.setCursor(0,0);
-  lcd.print("HMS");
+  lcd.print("Force sensor");
   lcd.setCursor(0,1);
-  lcd.print("-Shoe");
-  delay(3000);
+  lcd.print("values");
+  delay(4000);
   lcd.clear();
 }
 void loop() {
